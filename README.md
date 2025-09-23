@@ -28,7 +28,7 @@ Welcome to my GitHub profile! I'm passionate about building innovative solutions
 
 ## 📫 Connect with Me
 
-[mail](#bjleeid@naver.com)
+[mail](#mailto:bjleeid@naver.com)
 
 ---
 
