@@ -1,48 +1,14 @@
-# 👋 Hi there! I'm ByoungJun Lee
+# 뭘하려는 걸까요?
 
-Welcome to my GitHub profile! I'm passionate about building innovative solutions, exploring new technologies, and sharing my journey through code. Whether it's crafting robust applications, experimenting with new programming languages, or collaborating on open-source projects, I strive to learn, grow, and contribute to the developer community.
+K* 통신사에서 고객에게 SMS를 보낼때, 현재는 한글로만 문자가 보내지고 있는데,
+주한 외국인의 경우에는 한글을 알아볼수 없어서 다시 동일한 내용의 영문 SMS를 보내고 있습니다.
 
-## 🚀 About Me
+# Pain Ponit
 
-- 💡 **Curious Developer:** Always eager to learn and experiment with new tools and frameworks.
-- 🔨 **Builder:** Enjoy creating useful software—check out my projects below!
-- 🌍 **Collaborator:** Love connecting with fellow developers and contributing to open-source.
+KOS시스템의 고객정보에 선호언어를 저장(및 필요시 현행화)하고 있는데, 정작 선호언어로 안내문자를 받고 있지 못함
 
-## 🛠️ Top Technologies
+# 간단한 흐름 설명
 
-- Visual Basic, Visual C++, Oracle, SQL, etc.,
-- System Development and Management for kt(Korea Telecom) internal-use
-- Multilingual Messaging Solutions
-- [Add your top skills here!]
-
-## 📈 GitHub Stats
-
-![ByoungJun Lee's GitHub stats](https://github-readme-stats.vercel.app/api?username=bjleeid&show_icons=true&theme=tokyonight)
-
-## 🌟 Featured Projects
-
-- [MultiLang_ktSMS](https://github.com/bjleeid/MultiLang_ktSMS)  
-  A single-step version of tool of SMS content (from korean to other country) for nMIMO to send SMS of multiligual.
-
-[Add more of your standout projects here!]
-
-## 📫 Connect with Me
-
-[mail](#mailto:bjleeid@naver.com)
-
----
-
-Thanks for visiting my profile! Feel free to check out my repositories, give feedback, or connect for collaboration opportunities.
-
-```
-
----
-
-To make your README truly outstanding and personalized, could you share some key details?
-- **Profession or current role** (e.g., Software Engineer, Student, Mobile Developer)
-- **Top skills or tech stack** (languages, frameworks, platforms)
-- **Your favorite or most proud projects**
-- **Any social or professional links** (LinkedIn, Twitter, blog, etc.)
-- **A short personal motto or fun fact** (optional)
-
-Let me know, and I'll further refine your profile README!
+샘플 SMS 유형을 md파일로 저장하여 Load하고 우선 영문으로 Translate하여 저장 (사업부서 검토후 수정)
+한글을 각 외국인 선호언어에 맞게 실시간 번역하는 기능 구현
+=> SMS문자를 보내는 nMIMO시스템에서 선호언어로 변환하기 위해서 해당 기능 사용
