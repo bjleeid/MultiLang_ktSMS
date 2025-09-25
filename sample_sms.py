@@ -65,15 +65,17 @@ excel_file = 'sample_sms.xlsx'
 df = pd.read_excel(excel_file)
 json_data = df.to_dict(orient='records')
 json_filename = 'sample_sms.json'
-with open(json_filename, 'w', encoding='ms949') as f:
+with open(json_filename, 'w', encoding='utf-8') as f:
     json.dump(json_data, f, ensure_ascii=False, indent=4)
 print(f"Excel data from {excel_file} has been converted to JSON and saved to {json_filename}")
 
 # json 파일을 읽어서 documents 변수에 로드
-with open('.\sample_sms.json', 'r', encoding='ms949') as file:
+with open('.\sample_sms.json', 'r', encoding='utf-8') as file:
     documents = json.load(file)
-# 로드된 문서 출력 (선택 사항)
+# 로드된 문서 출력 (utf-8문서를 ms949로 인코딩하여 출력, 인코딩 오류시 대체 문자 사용)
 for document in documents:
-  print("Loaded document: ", document)
+  # JSON 문자열로 변환 후, ms949로 재인코딩/디코딩하여 출력
+  doc_str = json.dumps(document, ensure_ascii=False, indent=4)
+  print("Loaded document: ", doc_str.encode('ms949', errors='replace').decode('ms949'))
 
 print("You can now use this JSON file to upload to Azure Cognitive Search.")
